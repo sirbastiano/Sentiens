@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiens | AI for Space Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a1a;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 30% 50%, rgba(11, 15, 41, 0.8) 0%, rgba(5, 7, 17, 0.9) 100%);
+        }
+        .satellite-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.2), 0 10px 10px -5px rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-white font-bold text-xl gradient-text">SENTIENS</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Solutions</a>
+                        <a href="#technology" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Technology</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-blue-500 opacity-20 blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-purple-500 opacity-20 blur-3xl"></div>
+            <div class="satellite-animation absolute top-1/3 right-1/4 z-10">
+                <img src="https://cdn-icons-png.flaticon.com/512/3212/3212567.png" alt="Satellite" class="w-16 h-16 opacity-70">
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center relative z-10" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">Intelligence</span> Beyond Earth
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
+                Sentiens pioneers AI-driven space technologies, transforming how we observe and understand our planet.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#solutions" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-medium text-white hover:opacity-90 transition duration-300 transform hover:scale-105">
+                    Explore Solutions
+                </a>
+                <a href="#contact" class="px-8 py-4 border border-blue-400 rounded-lg font-medium text-blue-400 hover:bg-blue-900 hover:bg-opacity-30 transition duration-300 transform hover:scale-105">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Mission</h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    To revolutionize Earth observation through artificial intelligence, delivering unprecedented insights from space.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-gray-800 rounded-xl p-8 shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-400 mb-4">
+                        <i data-feather="eye" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Vision</h3>
+                    <p class="text-gray-300">
+                        A world where space-based AI provides real-time understanding of our planet's changing environment.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-purple-400 mb-4">
+                        <i data-feather="target" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mission</h3>
+                    <p class="text-gray-300">
+                        Develop cutting-edge AI solutions that extract maximum value from remote sensing data.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-400 mb-4">
+                        <i data-feather="award" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Values</h3>
+                    <p class="text-gray-300">
+                        Innovation, precision, and pushing the boundaries of what's possible in space technology.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="mt-24" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Our Journey</h2>
+                <div class="relative">
+                    <div class="hidden md:block absolute left-1/2 h-full w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
+                    
+                    <div class="mb-12 md:flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 md:w-5/12"></div>
+                        <div class="order-1 md:w-5/12 px-4 py-4" data-aos="fade-left">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-blue-400 mb-2">Remote Sensing Foundations</h3>
+                                <p class="text-gray-300">
+                                    Established core expertise in processing and analyzing satellite imagery for environmental monitoring.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-12 md:flex justify-between items-center w-full left-timeline">
+                        <div class="order-1 md:w-5/12 px-4 py-4" data-aos="fade-right">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-purple-400 mb-2">AI Integration</h3>
+                                <p class="text-gray-300">
+                                    Pioneered machine learning techniques for automated feature detection in Earth observation data.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:w-5/12"></div>
+                    </div>
+
+                    <div class="mb-12 md:flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 md:w-5/12"></div>
+                        <div class="order-1 md:w-5/12 px-4 py-4" data-aos="fade-left">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-blue-400 mb-2">Edge Computing</h3>
+                                <p class="text-gray-300">
+                                    Developed novel computing architectures to process data directly on satellites, reducing latency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:flex justify-between items-center w-full left-timeline">
+                        <div class="order-1 md:w-5/12 px-4 py-4" data-aos="fade-right">
+                            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold text-purple-400 mb-2">CubeSat Payloads</h3>
+                                <p class="text-gray-300">
+                                    Created advanced AI-powered payloads for small satellites, democratizing space-based intelligence.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 md:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Solutions</h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    Cutting-edge technologies designed to extract maximum value from space-based data.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-900 rounded-xl p-8 shadow-xl transition-all duration-300 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-400 mb-6">
+                        <i data-feather="cpu" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI for Remote Sensing</h3>
+                    <p class="text-gray-300 mb-4">
+                        Advanced neural networks that automatically detect and classify features in satellite imagery.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-8 shadow-xl transition-all duration-300 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-purple-400 mb-6">
+                        <i data-feather="hard-drive" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Novel Computing</h3>
+                    <p class="text-gray-300 mb-4">
+                        Specialized architectures for processing Earth observation data with unprecedented efficiency.
+                    </p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-8 shadow-xl transition-all duration-300 card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-400 mb-6">
+                        <i data-feather="activity" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ML at the Edge</h3>
+                    <p class="text-gray-300 mb-4">
+                        Onboard satellite processing that delivers real-time insights without ground station delays.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-8 shadow-xl transition-all duration-300 card-hover" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-purple-400 mb-6">
+                        <i data-feather="package" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">CubeSat Payloads</h3>
+                    <p class="text-gray-300 mb-4">
+                        Compact, AI-powered instruments that bring advanced capabilities to small satellite platforms.
+                    </p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 flex items-center">
+                        Learn more <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Showcase -->
+    <section id="technology" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Technology Showcase</h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    Our proprietary systems combine space hardware with artificial intelligence for unmatched performance.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="relative" data-aos="fade-right">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl opacity-20 blur-xl"></div>
+                    <div class="relative bg-gray-800 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Satellite" class="w-full h-auto">
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4">AI-Powered Satellite Constellation</h3>
+                    <p class="text-gray-300 mb-6">
+                        Our networked satellites communicate and collaborate, distributing AI workloads across the constellation for optimal performance.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-green-400 mr-2 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300">Real-time onboard processing reduces data transmission needs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-green-400 mr-2 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300">Self-healing algorithms maintain operations through anomalies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-green-400 mr-2 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300">Adaptive sensing adjusts collection parameters based on AI analysis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-1 md:order-2" data-aos="fade-left">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl opacity-20 blur-xl"></div>
+                    <div class="relative bg-gray-800 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="AI Processing" class="w-full h-auto">
+                    </div>
+                </div>
+                <div class="order-1 md:order-1" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4">Edge Processing Pipeline</h3>
+                    <p class="text-gray-300 mb-6">
+                        Our proprietary data processing pipeline delivers insights directly from orbit, bypassing traditional ground station bottlenecks.
+                    </p>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium text-blue-400 mb-1">Data Acquisition</h4>
+                            <p class="text-gray-400 text-sm">Multi-spectral sensors collect raw environmental data</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-purple-400 mb-1">Onboard Processing</h4>
+                            <p class="text-gray-400 text-sm">Custom neural networks analyze data in real-time</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-blue-400 mb-1">Insight Generation</h4>
+                            <p class="text-gray-400 text-sm">Actionable intelligence extracted before downlink</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Sentiens -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Sentiens</h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    We combine space heritage with AI expertise to deliver solutions others can't match.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black bg-opacity-50 rounded-xl p-8 border border-gray-800" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-400 mb-4">
+                        <i data-feather="zap" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Unmatched Speed</h3>
+                    <p class="text-gray-300">
+                        Our edge processing delivers insights up to 100x faster than traditional ground-based analysis.
+                    </p>
+                </div>
+                <div class="bg-black bg-opacity-50 rounded-xl p-8 border border-gray-800" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-purple-400 mb-4">
+                        <i data-feather="bar-chart-2" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Superior Accuracy</h3>
+                    <p class="text-gray-300">
+                        Proprietary AI models achieve industry-leading detection and classification accuracy.
+                    </p>
+                </div>
+                <div class="bg-black bg-opacity-50 rounded-xl p-8 border border-gray-800" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-blue-400 mb-4">
+                        <i data-feather="dollar-sign" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cost Efficiency</h3>
+                    <p class="text-gray-300">
+                        Small satellite solutions provide capabilities previously requiring large, expensive platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    Ready to explore how our AI space technologies can benefit your mission?
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-medium text-white hover:opacity-90 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-gray-900 rounded-xl p-8 h-full">
+                        <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="text-blue-400 mr-4 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">Email</h4>
+                                    <p class="text-gray-400">contact@sentiens.space</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="text-purple-400 mr-4 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">Headquarters</h4>
+                                    <p class="text-gray-400">Space Tech Park, San Francisco, CA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="clock" class="text-blue-400 mr-4 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-300">Business Hours</h4>
+                                    <p class="text-gray-400">Monday - Friday: 9AM - 5PM PST</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-300 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                                    <i data-feather="twitter" class="w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-blue-600 transition">
+                                    <i data-feather="linkedin" class="w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-purple-500 transition">
+                                    <i data-feather="github" class="w-6 h-6"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Sentiens</h3>
+                    <p class="text-gray-400 text-sm">
+                        Artificial Intelligence for Remote Sensing. Pioneering the future of space-based Earth observation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-gray-300 text-sm font-semibold uppercase tracking-wider mb-4">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">AI for Remote Sensing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Novel Computing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">ML at the Edge</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">CubeSat Payloads</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-gray-300 text-sm font-semibold uppercase tracking-wider mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white text-sm">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white text-sm">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-gray-300 text-sm font-semibold uppercase tracking-wider mb-4">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Subscribe to our newsletter for the latest updates.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-1 focus:ring-blue-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 transition">
+                            <i data-feather="send" class="w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2023 Sentiens. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        feather.replace();
+
+        // Simple animation for satellite elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const satellites = document.querySelectorAll('.satellite-animation');
+            satellites.forEach((sat, index) => {
+                anime({
+                    targets: sat,
+                    translateY: [-15, 15],
+                    duration: 3000 + (index * 500),
+                    direction: 'alternate',
+                    loop: true,
+                    easing: 'easeInOutSine'
+                });
+            });
+
+            // Card hover animations
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    anime({
+                        targets: card,
+                        scale: 1.02,
+                        duration: 300,
+                        easing: 'easeInOutQuad'
+                    });
+                });
+                card.addEventListener('mouseleave', () => {
+                    anime({
+                        targets: card,
+                        scale: 1,
+                        duration: 300,
+                        easing: 'easeInOutQuad'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
